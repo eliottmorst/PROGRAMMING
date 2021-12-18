@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Page Example</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">
+      Morst Sax Academy 
+    </h1>
+    
+    
+    <p id="description" class="description text-center">
+      answer accurately
+    </p>
+  </header>
+  
+  
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="your name" required />
+    </div>
+    
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="your email" required />
+
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"> Age<span class="clue">(optional)</span></label>
+      
+      
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="your age" />
+    </div>
+    
+    
+    <div class="form-group">
+      <p>How long actively playing/performing?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value> 1-2 years</option>
+        <option value="student">2-3 years</option>
+        <option value="job">3-4 years</option>
+        <option value="learner">4-5 years</option>
+        <option value="preferNo">5 or more years</option>
+       
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>When do  plan to audition?</p>
+      <label>
+        <input name="user-recommend" value="1 to 6 months" type="radio" class="input-radio" checked />1 to 6 months</label>
+      <label>
+        <input name="user-recommend" value="6 to 12 months" type="radio" class="input-radio" />6 to 12 months</label>
+
+      <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which saxophone do you plan to study?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select</option>
+        <option value="soprano">Soprano</option>
+        <option value="alto">Alto</option>
+        <option value="tenor">Tenor</option>
+        <option value="Baritone">Baritone</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What other techniques or genres are  you interested in?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label><input name="prefer" value="Quartets" type="checkbox" class="input-checkbox" />Quartets</label>
+    
+      
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Symphonic</label>
+    
+      
+      <label><input name="prefer" value="Avante " type="checkbox" class="input-checkbox" />Avante Garde</label>
+     
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Klezmer</label>
+    
+      
+      <label><input name="prefer" value="Blues" type="checkbox" class="input-checkbox" />Blues</label>
+     
+      
+      <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Multiphonics</label>
+      
+      
+      <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Altissimo</label>
+      
+      
+      
+      <label><input name="prefer" value="Pop/R&" type="checkbox" class="input-checkbox" />Pop/R&B</label>
+    
+      
+      <label><input name="prefer" value="Classical" type="checkbox" class="input-checkbox" />Classical</label>
+    
+      
+      <label><input name="prefer" value="Jazz" type="checkbox" class="input-checkbox" />Jazz</label
+    </div>
+
+        
+        
+        
+        
+        
+        
+        
+        
+    <div class="form-group">
+      <p>Any special needs or concerns?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
